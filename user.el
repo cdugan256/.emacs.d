@@ -41,6 +41,8 @@
 (setq ring-bell-function 'ignore)
 
 ; evil-leader setup
+; evil-leader does not work if placed lower in the file
+; not sure why
 (setq evil-leader/in-all-states 1)
 (global-evil-leader-mode 1)
 
