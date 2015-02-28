@@ -17,9 +17,9 @@
 ; Set colors
 (global-font-lock-mode t)
 
-; Show relative line numbers in margin
+; Show line numbers in margin
 ; Enable line and column numbers in status bar
-(add-hook 'prog-mode-hook 'relative-line-numbers-mode t)
+(global-linum-mode 1)
 (add-hook 'prog-mode-hook 'line-number-mode t)
 (add-hook 'prog-mode-hook 'column-number-mode t)
 
