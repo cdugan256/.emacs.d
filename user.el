@@ -162,6 +162,7 @@
 ;;    Defuns    ;;
 ;;;;;;;;;;;;;;;;;;
 
+; Rename file in the current buffer
 (defun rename-current-buffer-file ()
   "Renames current buffer and file it is visiting."
   (interactive)
