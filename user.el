@@ -17,9 +17,11 @@
 ; Set colors
 (global-font-lock-mode t)
 
-; Enable line and column numbers in the mode line
-(line-number-mode 1)
-(column-number-mode 1)
+; Show relative line numbers in margin
+; Enable line and column numbers in status bar
+(add-hook 'prog-mode-hook 'relative-line-numbers-mode t)
+(add-hook 'prog-mode-hook 'line-number-mode t)
+(add-hook 'prog-mode-hook 'column-number-mode t)
 
 ; Set standard indent size and tab width to 4 spaces
 (setq standard-indent 4)
