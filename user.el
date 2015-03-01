@@ -57,6 +57,7 @@
  "b" 'ido-switch-buffer
  "k" 'ido-kill-buffer
  "u" 'new-upcase-word
+ "o" 'other-window
  "SPC" 'evil-search-highlight-persist-remove-all)
 
 ; Paredit mode
