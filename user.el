@@ -56,7 +56,6 @@
  "q" 'save-buffers-kill-terminal
  "b" 'ido-switch-buffer
  "k" 'ido-kill-buffer
- "u" 'new-upcase-word
  "o" 'other-window
  "SPC" 'evil-search-highlight-persist-remove-all)
 
@@ -86,6 +85,7 @@
 ; Set j and k keys to move by visual line
 (define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
 (define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
+(define-key evil-normal-state-map (kbd "SPC") 'new-upcase-word)
 
 ; evil-mode plugins
 (require 'evil-matchit)
